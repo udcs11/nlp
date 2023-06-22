@@ -1,0 +1,10 @@
+import nltk
+from nltk.util import ngrams
+
+n=3
+Sentence="In life, you will encounter many obstacles, but never let them defeat you."
+trigrams = ngrams(Sentence.split(),n)
+
+
+for item in trigrams:
+   print(item)
